@@ -63,6 +63,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "options": {
+              "prebundle": false
+            },
             "production": {
               "buildTarget": "ng18-test:build:production"
             },
