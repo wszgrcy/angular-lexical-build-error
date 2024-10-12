@@ -12,9 +12,8 @@ import React from 'react';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  anchor = viewChild.required<ElementRef<HTMLElement>>('anchor');
+
   ngOnInit(): void {
-    let root = createRoot(this.anchor().nativeElement);
-    root.render(React.createElement(Editor));
+   
   }
 }
